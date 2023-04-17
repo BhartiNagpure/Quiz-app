@@ -20,11 +20,11 @@ function QueAns({data, questionNumber, setQuestionNumber, setStop}) {
     setSelectAnswer(a);
     setClassName('option active');
 
-    delay(3000, () =>
+    delay(2000, () =>
     setClassName(a.correct ? 'option correct': 'option wrong') 
     );
     
-    delay(6000, () =>{
+    delay(5000, () =>{
       if(a.correct){
         setQuestionNumber((prev) => prev + 1);
         setSelectAnswer(null);

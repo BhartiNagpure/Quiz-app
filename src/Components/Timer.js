@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-function Timer(setStop, questionNumber) {
+function Timer({setStop, questionNumber}) {
     const [timer, setTimer] = useState(30);
 
 
